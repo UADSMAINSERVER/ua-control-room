@@ -22,3 +22,18 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.6; }
 }
+
+#codex-locator input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #f00;
+  color: #fdfdfd;
+  padding: 0.5rem;
+  width: 100%;
+  font-family: 'Orbitron', monospace;
+}
+
+#locator-results {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+}

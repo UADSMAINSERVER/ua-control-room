@@ -1,6 +1,6 @@
-function searchOps() {
-  const query = document.querySelector('#eyefind-terminal input').value;
-  const results = document.getElementById('search-results');
-  results.innerHTML = `<p>Searching for: ${query}...</p>`;
-  // Future: Connect to UA map API or Codex search archive
+function deployCodexLocator() {
+  const query = document.querySelector('#codex-locator input').value;
+  const results = document.getElementById('locator-results');
+  results.innerHTML = `<p>🔍 Codex ping: <em>${query}</em>... awaiting encrypted response.</p>`;
+  // Future: Connect to Codex archive, RP map, or facility grid
 }

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UA Control Room</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
 <body>
   <header class="ua-header">
     <h1>UA Control Room</h1>
@@ -10,7 +18,6 @@
         <li>Storefront</li>
       </ul>
     </nav>
-    <link rel="stylesheet" href="style/main.css" />
     <div class="ua-weather">Sunday | ☀️ Tauranga</div>
   </header>
 
@@ -38,11 +45,15 @@
     <section class="ua-locator">
       <h2>CodexLocator</h2>
       <input type="text" placeholder="Search purge zones or RP targets..." />
-      <button>Ping Codex</button>
+      <button onclick="deployCodexLocator()">Ping Codex</button>
+      <div id="locator-results"></div>
     </section>
   </main>
 
   <footer class="ua-footer">
     <p>United Arctic Industries © 2025 | Sovereign-grade ops only</p>
   </footer>
+
+  <script src="scripts/dispatch.js"></script>
 </body>
+</html>

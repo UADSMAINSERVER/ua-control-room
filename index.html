@@ -1,30 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UA Control Room</title>
-  <link rel="stylesheet" href="style/main.css" />
-</head>
 <body>
-  <div class="boot-sequence">
-    <h1>UA CONTROL ROOM</h1>
-    <p>Codex Sync Online. Brandsturm Protocol Armed.</p>
-  </div>
+  <header class="ua-header">
+    <h1>UA Control Room</h1>
+    <nav class="ua-nav">
+      <ul>
+        <li>Codex</li>
+        <li>Factions</li>
+        <li>Dispatch</li>
+        <li>Locator</li>
+        <li>Storefront</li>
+      </ul>
+    </nav>
+    <div class="ua-weather">Sunday | ☀️ Tauranga</div>
+  </header>
 
-  <main class="grid">
-    <section id="codex-display"></section>
-    <section id="faction-status"></section>
-    <section id="mobile-dispatch"></section>
-    <section id="operative-roster"></section>
-   <section id="codex-locator" class="glass-module">
-  <h2>CodexLocator Terminal</h2>
-  <input type="text" placeholder="Enter target, zone, or Codex query..." />
-  <button onclick="deployCodexLocator()">Ping Codex</button>
-  <div id="locator-results"></div>
-</section>
+  <main class="ua-grid">
+    <section class="ua-news">
+      <h2>Codex Entry of the Day</h2>
+      <p>“Missile Silo purge confirmed. Vault integrity compromised.”</p>
+    </section>
+
+    <section class="ua-featured">
+      <h2>Featured Operation</h2>
+      <p>Brandsturm Protocol: Mobile breach active in Emergency Hamburg.</p>
+    </section>
+
+    <section class="ua-ad">
+      <h2>Faction Spotlight</h2>
+      <p>Bugstars now recruiting for toxic zone extractions.</p>
+    </section>
+
+    <section class="ua-bleets">
+      <h2>Recent Codex Pings</h2>
+      <p>@Slow~: “Cayo Libertad trade complete. Lore terminal secured.”</p>
+    </section>
+
+    <section class="ua-locator">
+      <h2>CodexLocator</h2>
+      <input type="text" placeholder="Search purge zones or RP targets..." />
+      <button>Ping Codex</button>
+    </section>
   </main>
 
-  <script src="scripts/dispatch.js"></script>
+  <footer class="ua-footer">
+    <p>United Arctic Industries © 2025 | Sovereign-grade ops only</p>
+  </footer>
 </body>
-</html>

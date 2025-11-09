@@ -8,45 +8,72 @@
 </head>
 <body>
   <header class="ua-header">
-    <h1>UA Control Room</h1>
+    <img src="assets/icons/ua-logo.png" alt="UA Logo" class="ua-logo" />
     <nav class="ua-nav">
       <ul>
-        <li>Codex</li>
-        <li>Factions</li>
-        <li>Dispatch</li>
-        <li>Locator</li>
-        <li>Storefront</li>
+        <li>MEDIA & OPS</li>
+        <li>FACTIONAL ZONES</li>
+        <li>VAULT & SERVICES</li>
+        <li>TRANSPORT & DEPLOYMENT</li>
+        <li>RANDOMIZED OPS</li>
       </ul>
     </nav>
-    <div class="ua-weather">Sunday | ☀️ Tauranga</div>
+    <div class="ua-weather">Sunday | 🥶 Arctic</div>
   </header>
 
   <main class="ua-grid">
+    <!-- CodexLocator Terminal -->
+    <section class="ua-locator">
+      <h2>CodexLocator</h2>
+      <div class="ua-tabs">
+        <button>Ops</button>
+        <button>Zones</button>
+        <button>Facilities</button>
+        <button>Codex</button>
+        <button>UGC</button>
+      </div>
+      <input type="text" placeholder="Search purge zones, RP targets, or Codex entries..." />
+      <button onclick="deployCodexLocator()">Ping Codex</button>
+      <div id="locator-results"></div>
+    </section>
+
+    <!-- News Story of the Day -->
     <section class="ua-news">
-      <h2>Codex Entry of the Day</h2>
-      <p>“Missile Silo purge confirmed. Vault integrity compromised.”</p>
+      <h2>NEWS STORY OF THE DAY</h2>
+      <img src="assets/icons/uac-comms.png" alt="United Arctic Comms" class="ua-icon" />
+      <p><strong>United Arctic Comms</strong> reports: “Human trafficking spikes in desert zones. Purge teams dispatched.”</p>
+      <a href="#">READ FULL ENTRY</a>
     </section>
 
+    <!-- Website of the Minute -->
     <section class="ua-featured">
-      <h2>Featured Operation</h2>
-      <p>Brandsturm Protocol: Mobile breach active in Emergency Hamburg.</p>
+      <h2>Website of the Minute</h2>
+      <p><strong>www.junkenergydrink.com</strong> — Official sponsor of UA breach squads. Caffeine + chaos.</p>
     </section>
 
+    <!-- Sponsored Advert -->
     <section class="ua-ad">
-      <h2>Faction Spotlight</h2>
-      <p>Bugstars now recruiting for toxic zone extractions.</p>
+      <h2>Sponsored Advert</h2>
+      <img src="assets/icons/ad-icon.png" alt="Ad Icon" class="ua-icon" />
+      <p>“Looking for sovereign-grade housing? Bugstars Realty has vaults in every zone.”</p>
     </section>
 
+    <!-- Featured Websites -->
+    <section class="ua-sites">
+      <h2>Featured UA Websites</h2>
+      <ul>
+        <li><img src="assets/icons/sixfiguretemps.png" alt="Six Figure Temps" /> Six Figure Temps</li>
+        <li><img src="assets/icons/altruist.png" alt="Altruist Society" /> The Altruist Society</li>
+        <li><img src="assets/icons/ammunation.png" alt="Ammu-Nation" /> Ammu-Nation</li>
+        <li><img src="assets/icons/powcleanse.png" alt="POW Cleanse" /> POW Cleanse</li>
+        <li><img src="assets/icons/fruit.png" alt="Fruit" /> Fruit</li>
+      </ul>
+    </section>
+
+    <!-- Recent Bleets -->
     <section class="ua-bleets">
       <h2>Recent Codex Pings</h2>
       <p>@Slow~: “Cayo Libertad trade complete. Lore terminal secured.”</p>
-    </section>
-
-    <section class="ua-locator">
-      <h2>CodexLocator</h2>
-      <input type="text" placeholder="Search purge zones or RP targets..." />
-      <button onclick="deployCodexLocator()">Ping Codex</button>
-      <div id="locator-results"></div>
     </section>
   </main>
 
